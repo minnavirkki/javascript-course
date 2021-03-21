@@ -1,0 +1,113 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-image: linear-gradient(90deg, #dff7bd, #40f2ec, #add2ed, #ffb2ff);
+    background-attachment: fixed;
+    background-size: 400vw;
+    background-position: cover;
+    background-attachment: fixed;
+    text-align: center;
+    font-weight: 300;
+    font-size: 14px;
+    animation: gradient 10s ease infinite;
+  }
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 51%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 51%;
+	}
+}
+  
+  h1 {
+    font-size: 14px;
+    font-weight: 300;
+    margin: 5em;
+  }
+  
+  #score {
+    height: 14px;
+    font-size: 14px;
+    font-weight: 300;
+  }
+  
+  .gamearea {
+    margin: 100px auto;
+    width: 80%;
+    text-align: center;
+  }
+  
+  .circle {
+    height: 100px;
+    width: 100px;
+    background: #efefef;
+    box-shadow: 5px 10px 30px #3e3f4285;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 20px 20px;
+  }
+  
+  .circle.active {
+    background-color: #ffb2ff;
+  }
+  
+  .circle:active {
+    box-shadow: none;
+  }
+  
+  button {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    background: #f3f3f3;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin: 20px;
+  }
+  
+  #result {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .gameoverbox {
+    font-weight: 300;
+    font-size: 14px;
+    background-color: white;
+    padding: 100px 0 0 0;
+    width: 40%;
+    height: 15%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    position: relative;
+  }
+  
+  .gameoverbox button {
+    font-weight: 300;
+    font-size: 14px;
+    background-color: transparent;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    outline: none;
+  }
+  
+  #gameover {
+    font-weight: 300;
+    font-size: 14px;
+    color: #333;
+  }
